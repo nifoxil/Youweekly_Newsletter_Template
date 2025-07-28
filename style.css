@@ -1,0 +1,248 @@
+:root{
+--red: #C9184A;
+--pink: #e19890;
+--soft-red: rgba(201, 24, 74, 0.7);
+--soft-pink: rgba(253, 134, 136, 0.7);
+--light-pink: #fff2f2;
+}
+.dancing-script-font {
+  font-family: "Dancing Script", cursive;
+  color: var(--pink);
+  font-size: 16px;
+}
+.hypatia-sans-font{
+  font-family: "hypatia-sans-pro";
+  font-weight: 600;
+  font-size: 16px;
+}
+
+#newsletter {
+  max-width: 600px;
+  margin: auto;
+  background-color: white;
+  font-family: "proxima-nova";
+}
+
+.opener{
+  position: relative;
+  width: 100%;
+}
+
+.flex-background::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  height: 2px;
+  width: 550px;
+  background-color: var(--red);
+}
+
+
+
+.image-container{
+  position: relative;
+  max-width: 600px;
+    
+}
+
+.img-text-container{
+  font-weight: 800;
+  position:absolute;
+  background-image: linear-gradient(to right,var(--soft-red) 50%, var(--soft-pink) 50%);
+  z-index: 1;
+  color: white;
+  font-size: 22px;
+  width: 249px;
+  height: 39px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow:0px 2px 2px black;
+  bottom: 28px;
+  left: 90px;
+}
+
+.content-container, 
+.secondary-article {
+  padding-top: 9;
+  padding: 9px 35px 25px;
+  align-items:end;
+  position: relative;
+}
+
+.secondary-article::after{
+content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: var(--red);
+}
+
+.category{
+  color: var(--red);
+  font-weight: 700;
+  font-size: 18px;
+  padding-bottom: 4px;
+  
+}
+
+.read-more{
+  font-weight: 600;
+  color: white;
+  background-color: var(--red);
+  transform: skewX(-10deg);
+  width: 205px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 12px;
+}
+.read-more:hover{
+  cursor: pointer;
+}
+
+.flex-container{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  text-align: center;
+}
+
+.flex-background{
+  background-image: linear-gradient(to bottom,white 70%, var(--soft-pink) 50%);
+  position: relative;
+}
+
+.flex-container .read-more {
+  width:146px;
+  height: 20px;
+  font-size: 12px;
+  margin: 12px auto;
+
+}
+
+.flex-container-item{
+  display: flex;
+  flex-direction: column;
+  width: 170px;
+  background-image: linear-gradient(to bottom,var(--light-pink) 90%, transparent 30%);
+  justify-content: center;  
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.hoverfun img:hover {
+  backface-visibility: hidden;
+  transform: scale(1.04, 1.04);
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  -webkit-text-size-adjust: 100%;}
+
+.flex-news-img{
+  height: 160px;
+  width: 160px;
+  display: block;
+  margin: auto;
+  overflow: hidden;
+}
+
+.numbering{
+  font-size: 58px;
+  font-weight: 800;
+  color:rgba(0, 0, 0, 0);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #707070;
+}
+
+.article-title{
+ font-size: 16px;
+  font-weight: 900;
+  margin-bottom: 6px;
+  margin-top: 0;
+}
+
+.article-excerpt{
+  font-size: 12px;
+  padding: 5px;
+  text-align: center;
+}
+
+.article-img{
+  padding: 11px 35px 11px 5px;
+}
+
+.flex-container-item .category{
+  font-size: 12px;
+  font-weight: 600;
+  color: #000;
+}
+
+.category-hub {
+  background-color: var(--light-pink);
+  height: 185px;
+  padding: 0 30;
+  align-items: center;
+}
+.category-hub-img{
+  height: 18px;
+  padding: 10px 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.category-block{
+  text-align: center;
+  width: 120px;
+  height: 120px;
+}
+
+.category-block button{
+  height: 20px;
+  width: 90px;
+  border: 1px solid #707070;
+  border-radius: 10px;
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+.category-block:nth-child(1){
+  background-image: url(yellowStories.png);
+  background-size: cover;
+}
+
+.category-block:nth-child(2){
+  background-image: url(purpleFashion.png);
+  background-size: cover;
+}
+
+.category-block:nth-child(3){
+  background-image: url(pinkBeauty.png);
+  background-size: cover;
+}
+
+.category-block:nth-child(4){
+  background-image: url(greenFamily.png);
+  background-size: cover;
+}
+footer{
+  border-top: 7px #C9184A solid;
+  height:64px;
+  background-color: black;
+  margin: 0;
+}
+footer p{
+  padding-left: 30px;
+  color: white;
+}
+
+@media screen and (min-width: 430px){
+ .flex-container-item{
+
+  width: 100%;
+ }
+ #newsletter {
+  background-color: #C9184A;
+ }
+}
