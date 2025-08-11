@@ -9,8 +9,18 @@
 body{
   max-width: 600px;
   margin: auto;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   font-family: "proxima-nova";
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+.category-container a {
+  color: #000;
+}
+.header-container{
+  height: 100%;
 }
 .dancing-script-font {
   font-family: "Dancing Script", cursive;
@@ -28,6 +38,7 @@ body{
   width: 100%;
 }
 
+
 .flex-background::before {
   content: "";
   position: absolute;
@@ -40,6 +51,12 @@ body{
 .image-container{
   position: relative;
   max-width: 600px;
+}
+
+
+.feature-article .image-container img {
+  max-width: 600px;
+  height: auto;
 }
 
 .img-text-container{
@@ -121,7 +138,6 @@ body{
   height: 20px;
   font-size: 12px;
   margin: 12px auto;
-
 }
 
 .flex-container-item{
@@ -175,6 +191,12 @@ body{
   padding: 5px 11px 5px;
 }
 
+.article-img img {
+    width: 355px;
+    height: 355px;
+    object-fit: cover;
+}
+
 .article-grid{
   display: flex;
   justify-content: space-evenly;
@@ -216,6 +238,9 @@ body{
   width: 120px;
   height: 120px;
 }
+.category-block a{
+  color: black;
+}
 
 .category-block button{
   height: 20px;
@@ -227,22 +252,22 @@ body{
 }
 
 .category-block:nth-child(1){
-  background-image: url(yellowStories.png);
+  background-image: url('https://www.youweekly.gr/wp-content/uploads/2025/07/yellowStories.png');
   background-size: cover;
 }
 
 .category-block:nth-child(2){
-  background-image: url(purpleFashion.png);
+  background-image: url('https://www.youweekly.gr/wp-content/uploads/2025/07/purpleFashion.png');
   background-size: cover;
 }
 
 .category-block:nth-child(3){
-  background-image: url(pinkBeauty.png);
+  background-image: url('https://www.youweekly.gr/wp-content/uploads/2025/07/pinkBeauty.png');
   background-size: cover;
 }
 
 .category-block:nth-child(4){
-  background-image: url(greenFamily.png);
+  background-image: url('https://www.youweekly.gr/wp-content/uploads/2025/07/greenFamily.png');
   background-size: cover;
 }
 footer{
@@ -251,16 +276,51 @@ footer{
   background-color: black;
   margin: 0;
 }
-footer p{
-  padding-left: 30px;
-  color: white;
+.flex-news-img img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
 }
-
+footer{
+  color: #ffffff;
+  border-top: 7px #C9184A solid;
+  height:64px;
+  background-color: #000000;
+  margin: 0;
+}
+.footer-container{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-logo{
+  display: flex;
+  margin-left: 35px;
+}
+.footer-logo img{
+  height: 14px;
+}
+.footer-social-icons{
+display: flex;
+align-items: center;
+}
+.footer-social-icons a{
+  display: flex;
+  margin-right: 10px;
+}
+.footer-social-icons span{
+  font-size: 11px;
+  font-weight: 400;
+  margin-right: 15px;
+}
 @media screen and (max-width: 430px){
  .img-text-container{
   left: 60px;
  }
-
+.header-container img{
+  width: 100vw;
+}
  .image-container img{
   display: flex;
   object-fit: cover;
@@ -269,9 +329,17 @@ footer p{
   margin: auto;
   justify-content: center;
  }
+.flex-container .read-more {
+  width: 234px;
+  height: 40px;
+}
 
  .flex-container-item{
   width: 300px;
+ }
+
+ .flex-background::before {
+  width: 100%;
  }
 
  .flex-container .article-excerpt{
@@ -348,4 +416,12 @@ footer p{
  .category-hub{
   height: 100%;
  }
+}
+@media only screen and (max-width: 360px) {
+  .content-container, .article, .feature-article-excerpt {
+    padding: 9px 5px;
+  }
+  .footer-social-icons span{
+    font-size: 9px;
+  }
 }
